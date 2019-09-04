@@ -1,0 +1,1 @@
+#planning a new system is the process of htinking about various details and organizing the activities required to achieve thee diesired goal, it should anticipate several potential organizational issues.

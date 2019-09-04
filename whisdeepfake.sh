@@ -1,0 +1,1 @@
+#deepfakes can be used as a dangerous tool for invasion of privacy and spread of misinformation, but it also has potentially useful business implications, and so should not be rejected completely as a technology, but treated with caution, it is capable of making realistic fake videos of peoples faces with realistic face movements.

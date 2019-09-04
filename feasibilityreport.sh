@@ -1,0 +1,1 @@
+#a feasibility study evaluates and analyzes a project and its potential, basedd on various technical, economical, legal, operational and scheduling criteria, used to decide whether the proposed object should be pursued

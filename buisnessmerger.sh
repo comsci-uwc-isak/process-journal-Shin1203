@@ -1,0 +1,1 @@
+#is the combining of two or more business entitties. The main reason companies merge is to reduce costs, during this process all departments of both companies need to ensure that subsytems are compatible
