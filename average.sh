@@ -1,4 +1,6 @@
+#!/bin/bash
 
+#Running average is the calculation to analyze data points by creating a series of averages of didfferent subsets of the full data set. It is also called a moving mean or rolling mean and is a type of finite impulse response filter. Variations include: simple, and cumulative or weighted forms
 echo "Welcome to the Running AveragE"
 
 valid=true

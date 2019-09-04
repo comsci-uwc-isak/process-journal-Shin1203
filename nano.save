@@ -1,0 +1,41 @@
+U nano 2.9.3                                            montyhall.sh                                            Modified  
+
+#!/bin/bash
+
+prize=$(((RANDOM%3)+1))
+
+echo "choose a door 1-3"
+read chosen
+#Find a door that is neither the price nor the the  players choice, 
+#Use while loop to generate number 1-3, when number isnt the player's first choice or the prize, the if clause breaks the loo$
+while true; do
+        notrightnotwrong=$(((RANDOM%3)+1))
+        if [[ $notrightnotwrong != $prize && $notrightnotwrong != $chosen ]]; then
+                break
+        fi
+done
+#here we reveal the wrong door
+echo  $notrightnotwrong has been opened by the game master, there was nothing in it
+#option to open another door
+echo "do you want to choose to change the door [y/n]"
+read option
+#the code will only allow you to choose the door that hasnt been revealed yet,if the player chooses the door they have alread$
+if [[ $option == y ]]; then
+        while true; do
+                read secondchoice
+                if [[ $secondchoice != $notrightnotwrong && $secondchoice != $chosen ]]; then
+                        echo "you have chosen" $secondchoice
+                        chosen=$secondchoice
+break   
+#once the door is chosen the while loop is broken
+                else 
+                        echo "Choose a different door"
+                fi
+        done
+fi
+
+#code that reveals whether or not the player has won 
+                                   [ line 13/42 (30%), col 1/11 (9%), char 428/1334 (32%) ]
+^G Get Help    ^O Write Out   ^W Where Is    ^K Cut Text    ^J Justify     ^C Cur Pos     M-U Undo       M-A Mark Text
+^X Exit        ^R Read File   ^\ Replace     ^U Uncut Text  ^T To Linter   ^_ Go To Line  M-E Redo       M-6 Copy Text
+
