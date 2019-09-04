@@ -4,7 +4,7 @@
 a=0
 b=1
 
-echo "enter number cunt"
+echo "enter number"
 read number
 count=0
 #this while loop runs while the number entered by the player is greater than the variable count, which goes up after every sequence.
