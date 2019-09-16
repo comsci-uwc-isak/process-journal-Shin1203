@@ -2,7 +2,7 @@
 a=0
 b=1
 
-echo "enter number cunt"
+echo "enter number"
 read number
 count=0
 
