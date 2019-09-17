@@ -14,5 +14,5 @@ Usage
 You can use this repository as a source of information and inspiration for your awesome programs.
 ```sh
   
-git clone
+git clone https://github.com/comsci-uwc-isak/process-journal-Shin1203.git
 ```
