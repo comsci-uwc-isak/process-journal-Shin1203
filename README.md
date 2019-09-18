@@ -16,3 +16,12 @@ You can use this repository as a source of information and inspiration for your 
   
 git clone https://github.com/comsci-uwc-isak/process-journal-Shin1203.git
 ```
+
+
+Organization
+--------------
+This repository is organized by **folders** corresponding to each topic  in the syllabus
+
+License
+-------------
+This repository is licensed under MIT version 2.0
