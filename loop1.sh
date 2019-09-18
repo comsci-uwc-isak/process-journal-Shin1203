@@ -30,11 +30,12 @@ done
 #done
 
 
-
+https://github.com/comsci-uwc-isak/process-journal-Shin1203.git
 #Example 3: Reading arguments from the command line
 
 echo  "Adding all the arguments"
 sum=0
+myval=4
 for myval in $*
 do
 	(( sum+=$myval ))
