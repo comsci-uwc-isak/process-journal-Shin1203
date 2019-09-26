@@ -1,0 +1,5 @@
+#!bin/bash
+
+echo "type"
+read word
+grep -o -i a b c d $word

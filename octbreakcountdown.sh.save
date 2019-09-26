@@ -1,0 +1,43 @@
+#!/bin/bash
+
+
+#identifiers for each month
+January=1
+#Jan=0days
+
+February=2
+#Feb=32days
+
+March=3
+#March=60days
+
+April=4
+#April=91days
+
+May=5
+#May=121days
+
+June=6
+#June=152days
+
+July=7
+#July=182days
+
+August=8
+#August=213day
+
+September=9
+#September=244day
+
+October=10
+#October=274
+
+
+#read month from user
+echo "Enter month as number (Jan-Oct)"
+read month
+
+if [ $month == $January ]; then
+echo "January- enter date"
+read date
+(( total = $date ))
