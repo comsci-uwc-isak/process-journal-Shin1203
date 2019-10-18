@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#the number command reverses the order of countring from 1-1001 to 1001-1
+#the if command echoes the number when the number is odd.
+for i in {1..1001}; do
+number=$((1002-$i))
+	if (( $i % 2 )); then
+		echo $number
+	fi
+done

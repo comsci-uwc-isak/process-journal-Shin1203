@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#program  counts from 1-1000 if even add, if odd add
+for i in {1..1000}; do
+	if (( $i % 2 )); then
+		oddsum=$(($oddsum+$i))
+	else
+		evensum=$(($evensum+$i))
+	fi
+done
+echo "Sum of all odd numbers 1-1000 is" $oddsum
+echo "Sum of all even numbres 1-1000 is" $evensum

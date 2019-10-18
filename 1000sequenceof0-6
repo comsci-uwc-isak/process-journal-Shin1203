@@ -1,0 +1,13 @@
+#!/bin/bash
+
+nunmber=0
+for i in {0..100}; do
+#the if command resets printed number to 0  when it reaches 6, achieveing the sequence 0-6 
+	if [[ $number -lt 7 ]]; then
+		number=$(($number+1))
+		echo $number
+	else
+	number=$(($number-7))
+	echo $number
+	fi
+done

@@ -1,0 +1,63 @@
+#!/bin/bash
+
+#for ordinal numbers, only the numbers 1,2,3 produce special endings, the rest can be ended with "th"
+#3 seperate if statements needed for - *First 10 numbers(different code needed to read digit), *numbers 10-20, as they don't follow same ordinal lettering pattern as rest, *Numbers above 20 will follow same pattern
+#the firstchar variables pull the first digit of the number of i
+#the if statements place the proper ordinal namings for each number 1-100
+
+
+
+
+
+for i in {1..100}; do
+#read single digit char for numbers 1-9
+
+if [[ $i -lt 10 ]]; then
+first_char1="${i:0:1}"
+
+	if [[ $first_char1 -eq 1 ]]; then
+		echo $i"st"
+	else if [[ $first_char1 -eq 2 ]]; then
+                echo $i"nd"
+
+	else if [[ $first_char1 -eq 3 ]]; then
+                echo $i"rd"
+        else
+		echo $i"th"
+	fi
+	fi
+	fi	
+fi
+
+
+
+if [[ $i -gt 9 && $i -lt 21 ]]; then
+#for numbers 10-20 all numbers end with 'th" even with 1,2,3 as the first digit number
+first_char2="${i:1:1}"
+echo $i"th"
+fi
+
+
+if [[ $i -gt 20 ]]; then 
+#this code will apply for the rest of the numbers (21-100)
+first_char3="${i:1:1}"
+	if [[ $first_char3 -eq 1 ]]; then
+                echo $i"st"
+        else if [[ $first_char3 -eq 2 ]]; then
+                echo $i"nd"
+
+        else if [[ $first_char3 -eq 3 ]]; then
+                echo $i"rd"
+        else
+                echo $i"th"
+        fi
+        fi
+        fi
+
+
+
+fi
+
+
+done
+

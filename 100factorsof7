@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+#to print 100 factors of 7, multiply i (ranging from 1-100) by 7
+
+for i in {1..100}; do
+number=$((i*7))
+echo $number
+done
